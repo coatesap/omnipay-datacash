@@ -2,8 +2,6 @@
 
 namespace Omnipay\DataCash;
 
-use Omnipay\DataCash\Message\CompletePurchaseRequest;
-use Omnipay\DataCash\Message\PurchaseRequest;
 use Omnipay\Common\AbstractGateway;
 
 /**
@@ -20,11 +18,11 @@ class Gateway extends AbstractGateway
 
     public function getDefaultParameters()
     {
-        return array(
+        return [
             'merchantId' => '',
             'password' => '',
-            'testMode' => false
-        );
+            'testMode' => false,
+        ];
     }
 
     public function getMerchantId()
@@ -47,18 +45,23 @@ class Gateway extends AbstractGateway
         return $this->setParameter('password', $value);
     }
 
-    public function purchase(array $parameters = array())
+    public function purchase(array $parameters = [])
     {
         return $this->createRequest('\Omnipay\DataCash\Message\PurchaseRequest', $parameters);
     }
 
-    public function completePurchase(array $parameters = array())
+    public function completePurchase(array $parameters = [])
     {
         return $this->createRequest('\Omnipay\DataCash\Message\CompletePurchaseRequest', $parameters);
     }
 
-    public function refund(array $parameters = array())
+    public function refund(array $parameters = [])
     {
         return $this->createRequest('\Omnipay\DataCash\Message\RefundRequest', $parameters);
+    }
+
+    public function query(array $parameters = [])
+    {
+        return $this->createRequest('\Omnipay\DataCash\Message\QueryRequest', $parameters);
     }
 }

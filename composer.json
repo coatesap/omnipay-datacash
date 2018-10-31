@@ -22,6 +22,7 @@
         "psr-0": { "Omnipay\\DataCash\\" : "src/" }
     },
     "require": {
+        "ext-simplexml": "*",
         "omnipay/common": "2.*"
     },
     "require-dev": {

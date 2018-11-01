@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+Cache-Control: private, max-age=0
+Content-Length: 944
+Content-Type: text/xml; charset=utf-8
+Node: VENUS
+X-Powered-By: ASP.NET
+X-AspNet-Version: 4.0.30319
+Date: Fri, 15 Feb 2013 14:10:53 GMT
+
+<?xml version="1.0" encoding="utf-8"?>
+<Response>
+    <datacash_reference>3100108890691001</datacash_reference>
+    <mode>LIVE</mode>
+    <reason>Invalid query ref</reason>
+    <status>22</status>
+    <time>1540994766</time>
+</Response>

@@ -1,0 +1,36 @@
+HTTP/1.1 200 OK
+Cache-Control: private, max-age=0
+Content-Length: 944
+Content-Type: text/xml; charset=utf-8
+Node: VENUS
+X-Powered-By: ASP.NET
+X-AspNet-Version: 4.0.30319
+Date: Fri, 15 Feb 2013 14:10:53 GMT
+
+<?xml version="1.0" encoding="utf-8"?>
+<Response>
+    <QueryTxnResult>
+        <Card>
+            <card_category>Personal</card_category>
+            <country>gbr</country>
+            <expirydate>12/21</expirydate>
+            <issuer>Acme Bank</issuer>
+            <pan>444433******1111</pan>
+            <scheme>VISA</scheme>
+        </Card>
+        <acquirer>Mickeycard</acquirer>
+        <authcode>123456</authcode>
+        <datacash_reference>3000001234567898</datacash_reference>
+        <environment>ecomm</environment>
+        <fulfill_date>2018-10-15 18:41:06</fulfill_date>
+        <merchant_reference>ABCDEFG12345</merchant_reference>
+        <reason>ACCEPTED</reason>
+        <sent>Settled</sent>
+        <status>1</status>
+        <transaction_date>2018-10-14 22:41:06</transaction_date>
+    </QueryTxnResult>
+    <mode>LIVE</mode>
+    <reason>ACCEPTED</reason>
+    <status>1</status>
+    <time>1540994766</time>
+</Response>
